@@ -25,6 +25,20 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    // console.log(functionVar); // Throws ReferenceError
+    // console.log(functionLet); // Throws ReferenceError
+    // console.log(functionConst); // Throws ReferenceError
+
+    {
+        var a = 0;
+        let b = 1;
+        const c = 2;
+
+        a = 3;
+        b = 4;
+        // c = 5; // Cant reassign
+    }
+
+    a = 6;
+    b = 7;
+    c = 8;
